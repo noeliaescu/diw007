@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+header, footer {
+  border-top: 5px solid rgb(136, 78, 78);
+  border-bottom: 5px solid rgb(136, 78, 78);
+}
+
+/*COMO PONER LAS FUENTES*/
+@font-face {
+  font-family: 'Tinos';
+  src: url('fonts/tinos-regular-webfont.woff2') format('woff2'),
+       url('fonts/tinos-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PaytoNeone';
+  src: url('fonts/paytoneone-regular-webfont.woff2') format('woff2'),
+  url('fonts/paytoneone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*DONDE USAR LAS FUENTES*/
+html {
+  font-family: Tinos, serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: PaytoNeone, sans-serif;
+  letter-spacing: 2px;
+}
+
+ul,ol,p {
+  font-size: 1.5rem;
+}
+/*lower-latin  PONE a) b) c)...
+  upper-latin  PONE A) B) C)...*/
+ol {
+  list-style-type: lower-latin;
+}
+
+a {
+  outline: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: rgb(194, 106, 106);
+}
+
+a:visited {
+  color: rgb(194, 106, 106);
+}
+
+a:focus {
+  color: rgb(194, 106, 106);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(194, 106, 106);
+  text-decoration: none;
+  
+}
+
+a:active {
+  color: rgb(68, 30, 30);
+
+}
+
+a[href*="https"] {
+  background: url('external-link-52.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+/*square  LO PONE EN CUADRADOS*/
+ul {
+  list-style-type: square;
+}
+
+nav {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid;
+  text-align: center;
+}
+
+nav a:link,
+nav a:visited {
+  color: rgb(194, 106, 106);
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active {
+  background-color: rgb(68, 30, 30);
+}
